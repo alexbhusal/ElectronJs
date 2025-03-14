@@ -2,19 +2,26 @@
   "name": "deskapp",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "electronmon .",
+    "lint": "next lint",
+    "electron": "electron .",
+    "electron-dev": "electronmon ."
   },
   "dependencies": {
+    "electron-is-dev": "^3.0.1",
+    "electronmon": "^2.0.3",
+    "next": "15.2.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.2.2"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "electron": "^35.0.1",
+    "electron-packager": "^17.1.2",
     "tailwindcss": "^4"
   }
 }
